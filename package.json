@@ -1,0 +1,20 @@
+{
+  "name": "covid-19",
+  "version": "1.0.0",
+  "description": "In this proyect, you can have a important tool for the actuality pandemic <covid-19>",
+  "main": "./src/index.html",
+  "scripts": {
+    "start": "live-server",
+    "sass": "node-sass src/sass/style.sass src/css/style.css -w"
+  },
+  "keywords": [
+    "pandemic",
+    "covid-19"
+  ],
+  "author": "Hugo Andrés Díaz Bernal <hugoandresdiazbernal@gmail.com>",
+  "license": "   MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1"
+  }
+}

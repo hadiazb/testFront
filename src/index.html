@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/style.css">
+
+  <title>Covid-19</title>
+
+</head>
+<body>
+  
+  <header class="header">
+
+    <section class="header__menuMobile">
+      <div class="header__menuMobile__button icon-menu"></div>
+      <div class="header__menuMobile__title">
+          <h3>
+            <a href="#">Covid-19</a>
+          </h3>
+      </div>
+    </section>
+    <section class="header__menuWeb">
+      
+    </section>
+  </header>
+  
+  <section class="mobile">
+    <div class="mobile__container">
+      <div class="mobile__container__back">
+        <div class="mobile__container__back-return ">
+          <span class="icon-close"></span>
+        </div>
+      </div>
+      <div class="mobile__container__logo">
+        <img src="./images/LogoUnoBlanco.png" alt="">
+      </div>
+      <div class="mobile__container__logoDos">
+        <img src="./images/LogoBlanco.png" alt="">
+      </div>
+      <div class="mobile__container__information"></div>
+      <div class="mobile__container__socialmedia"></div>
+    </div>
+  </section>
+
+  <section class="mapInformation">
+    <div class="mapInformation__map" id="map">
+
+    </div>
+
+    <div class="mapInformation__information">
+      <div class="mapInformation__information__statistics">
+        <div class="mapInformation__information__statistics-head">
+          <img src="./images/usa.png" alt="USA Flag">
+          <h3 id="title"></h3>
+        </div>
+        <div class="mapInformation__information__statistics-data">
+          <label for=""><span class="icon-person"></span>Total Cases</label>
+          <h6 id="totalCases"></h6>
+        </div>
+        <div class="mapInformation__information__statistics-data">
+          <label for=""><span class="icon-person"></span>Active Cases</label>
+          <h6 id="activeCases"></h6>
+        </div>
+        <div class="mapInformation__information__statistics-data">
+          <label for=""><span class="icon-person"></span>Dead Cases</label>
+          <h6 id="deadCases"></h6>
+        </div>
+        <div class="mapInformation__information__statistics-data">
+          <label for=""><span class="icon-person"></span>Recovered Cases</label>
+          <h6 id="recoveredCases"></h6>
+        </div>        
+        <div class="mapInformation__information__statistics-data">
+          <label for=""><span class="icon-person"></span>Updated</label>
+          <h6 id="updated"></h6>
+        </div>
+      </div> 
+      
+      
+      
+    </div>
+  </section>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD7B20X6nDgerRjuW84R3lf5TtqDO6AVg"></script>
+<script type="module" src="script/index.js"></script>
+
+</body>
+</html>
