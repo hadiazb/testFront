@@ -38,8 +38,15 @@ En este proyecto se emplearon las siguientes metodologias con el objetivo de hac
 ## API
 Las API y recursos se encuentran en los siguientes links
 
-- https://www.trackcorona.live/api/countries
-- https://www.trackcorona.live/api/provinces
-- https://www.trackcorona.live/api/cities
+- `<link>` : https://www.trackcorona.live/api/countries
+- `<link>` :https://www.trackcorona.live/api/provinces
+- `<link>` :https://www.trackcorona.live/api/cities
 
 ## Procedimiento para deploy
+
+- Debes clonar el repo con el siguiente codigo `$ git clone https://github.com/hadiazb/testFront.git`
+- Luego de la descarga debes instalar node y npm como se muestra `$ node install` y `$ npm install`
+- Verificar versión con  `$ node -v` y `$ npm -v`
+- Ahora debes instalar la unica dependencia necesaria, ya que el codigo .sass ya fue compilado es `$ npm i -D live-server`, para generar localHost.
+- Para correr este proyecto en local ya esta configurado el script en el package como `$"start": "live-server"`, por lo cual la linea de codigo en la terminal sera `$ npm run start`, con esto se abrira el proyecto en el navegador que tengas predeterminado.
+- Dado que el archivo se indexa en un html, pensando en el modelo vista controlador,  debes entrar a la carpeta raiz que src/ que se mostrara en el navegador, luego darle click en index.html.
