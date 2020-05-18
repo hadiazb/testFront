@@ -27,30 +27,33 @@ Las herramientas empleadas en este proyecto son listadas a continuación:
 - Repocitorio de GitHub con contenido Cartografico: https://github.com/unitedstates/districts/tree/gh-pages/states
 
 ## Vesión
-En la actualidad se cuenta con la v1.0.0, que nos permite el uso de herramientas basicas para la visualización de usuario final.
+En la actualidad se cuenta con la v1.0.0, que nos permite el uso de herramientas básicas para la visualización de usuario final.
 
 ## Metodologias 
-En este proyecto se emplearon las siguientes metodologias con el objetivo de hacer codigo más limpio y facil de leer.
+En este proyecto se emplearon las siguientes metodologías con el objetivo de hacer código más limpio y fácil de leer.
 
-- Metodologia BEM, Bloque-Elemento-Modificador, es empleada en los archivos de SASS que compilan en CSS
-- Asignación de variables empleado camelCase, especificamente en JavaScript
+- Metodología BEM, Bloque-Elemento-Modificador, es empleada en los archivos de SASS que compilan en CSS
+
+- Asignación de variables empleado camelCase, específicamente en JavaScript
 
 ## API
 Las API y recursos se encuentran en los siguientes links
 
-`<link>` :<https://www.trackcorona.live/api/countries>
-`<link>` :<https://www.trackcorona.live/api/provinces>
-`<link>` :<https://www.trackcorona.live/api/cities>
+- `<link>` :<https://www.trackcorona.live/api/countries>
+- `<link>` :<https://www.trackcorona.live/api/provinces>
+- `<link>` :<https://www.trackcorona.live/api/cities>
 
 ## Procedimiento para deploy
 
-- Debes clonar el repo con el siguiente codigo `$ git clone https://github.com/hadiazb/testFront.git`
+- Debes clonar el repocitorio con el siguiente código `$ git clone https://github.com/hadiazb/testFront.git`
 - Luego de la descarga debes instalar node y npm como se muestra `$ node install` y `$ npm install`
 - Verificar versión con  `$ node -v` y `$ npm -v`
 - Ahora debes instalar la unica dependencia necesaria, ya que el codigo .sass ya fue compilado es `$ npm i -D live-server`, para generar localHost.
-- Para correr este proyecto en local ya esta configurado el script en el package como `$"start": "live-server"`, por lo cual la linea de codigo en la terminal sera `$ npm run start`, con esto se abrira el proyecto en el navegador que tengas predeterminado.
+- Para correr este proyecto en local ya esta configurado el script en el package como `$"start": "live-server"`, por lo cual la linea de codigo en la terminal sera `$ npm run start`, con esto se abrir el proyecto en el navegador que tengas predeterminado.
 - Dado que el archivo se indexa en un html, pensando en el modelo vista controlador,  debes entrar a la carpeta raiz que src/ que se mostrara en el navegador, luego darle click en index.html, con esto sera suficiente para plotear el proyecto.
-- Si nada de lo anterior funciona, puedes entrar a al link que te ofrece el repositorio de gitHub, allí tambien podras verlo!!!
+- Si nada de lo anterior funciona, puedes entrar a al link que te ofrece el repositorio de gitHub, allí también podras verlo!!!
 - Suerte con ello.
 
-![](./images/LogoBlanco.png)
+### Este es un proyecto desarrollado por CrackCode. 
+- Telefono 311-268-1981
+- <hugoandresdiazbernal@gmail.com>
