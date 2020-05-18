@@ -27,7 +27,7 @@ function traer() {
         updated = data.data[i].updated;
       }
     }
-    document.getElementById('title').innerHTML = `${title} - ${country_code}`;
+    document.getElementById('title').innerHTML = `${title} - ${country_code.toUpperCase()}`;
     document.getElementById('totalCases').innerHTML = totalCases;
     document.getElementById('activeCases').innerHTML = totalCases - deadCases -recoveredCases;
     document.getElementById('deadCases').innerHTML = deadCases;
@@ -97,7 +97,7 @@ async function getData() {
 function renderExtraData({ location, country_code, recovered, dead, confirmed }) {
   return (`
   <div>
-  <p> <strong>${country_code} - ${location}</strong> </p>
+  <p> <strong>${country_code.toUpperCase()} - ${location}</strong> </p>
   <p> confirmados: ${confirmed} </p>
   <p> muertes: ${dead} </p>
   <p> recuperados: ${recovered} </p>

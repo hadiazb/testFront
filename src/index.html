@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts/style.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
   <title>Covid-19</title>
 
 </head>
@@ -54,32 +54,37 @@
     <div class="mapInformation__map" id="map"></div>
 
     <div class="mapInformation__information">
+
       <div class="mapInformation__information__statistics">
         <div class="mapInformation__information__statistics-head">
           <img src="./images/usa.png" alt="USA Flag">
           <h3 id="title"></h3>
         </div>
         <div class="mapInformation__information__statistics-data">
-          <label for=""><span class="icon-person"></span>Total Cases</label>
+          <label for=""><span class="icon-person total"></span>Total Cases</label>
           <h6 id="totalCases"></h6>
         </div>
         <div class="mapInformation__information__statistics-data">
-          <label for=""><span class="icon-person"></span>Active Cases</label>
+          <label for=""><span class="icon-person active"></span>Active Cases</label>
           <h6 id="activeCases"></h6>
         </div>
         <div class="mapInformation__information__statistics-data">
-          <label for=""><span class="icon-person"></span>Dead Cases</label>
+          <label for=""><span class="icon-person dead"></span>Dead Cases</label>
           <h6 id="deadCases"></h6>
         </div>
         <div class="mapInformation__information__statistics-data">
-          <label for=""><span class="icon-person"></span>Recovered Cases</label>
+          <label for=""><span class="icon-person recovered"></span>Recovered Cases</label>
           <h6 id="recoveredCases"></h6>
         </div>        
         <div class="mapInformation__information__statistics-data">
-          <label for=""><span class="icon-person"></span>Updated</label>
+          <label for=""><span class="space"></span>Updated</label>
           <h6 id="updated"></h6>
         </div>
       
+        <div class="mapInformation__information__statistics-search">
+          <input type="text" placeholder="Search">
+        </div>
+
         <div class="mapInformation__information__statistics-table">
           <h4>Stade Cases</h4>
           <table class="table">

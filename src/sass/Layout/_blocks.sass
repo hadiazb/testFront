@@ -19,6 +19,7 @@
       font-size: 1em
       & a 
         color: $color-white
+        font-family: Verdana, Geneva, Tahoma, sans-serif
         text-decoration: none
       & a:hover
         text-decoration: underline
@@ -74,6 +75,7 @@
         background-color: #0000001a
         color: #ffffff
         border-radius: 7px
+        font-family: Verdana, Geneva, Tahoma, sans-serif
         box-shadow: 0 0 5px #000000
         outline: none
       & button:hover
@@ -157,6 +159,36 @@
           & span
             font-size: 2em
             padding-right: 10px
+          & .total
+            color: #41ce16d2
+          & .active
+            color: #f0670bb6
+          & .dead
+            color: #5d0404
+          & .recovered
+            color: #103fbe
+          & .space
+            width: 42px
+            height: 30px
+            padding-right: 10px
+        & h6 
+          font-size: 1em
+          letter-spacing: 2px
+      &-search
+        width: 100%
+        height: 50px
+        margin: 10px 0
+        display: flex
+        align-items: center
+        & input
+          width: 100%
+          height: 40px
+          padding: 0 15px
+          outline: none
+          border-radius: 15px
+          color: white
+          background-color: #444444c0
+          border: 1px solid #bdbdbd
         & h6 
           height: 40px
           width: 40%
@@ -166,7 +198,7 @@
           line-height: 50px
       &-table
         padding: 0 0 10px
-        height: 200px
+        height: 235px
         overflow-y: scroll
         & h4 
           width: 100%
@@ -203,7 +235,7 @@
   background-color: rgba(255, 255 , 255 , .05)
 
 .mapInformation__information__statistics-table::-webkit-scrollbar
-  width: 7px
+  width: 4px
   background-color: #3b3b3a
 .mapInformation__information__statistics-table::-webkit-scrollbar-thumb
   background-color: #444444
