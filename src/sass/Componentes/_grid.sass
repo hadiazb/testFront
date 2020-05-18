@@ -1,19 +1,14 @@
-$breakpoint-xs: 320px
+$breakpoint-xs: 340px
 $breakpoint-sm: 767px
 $breakpoint-md: 1023px
 $breakpoint-lg: 1360px
- 
-@media (max-width: $breakpoint-sm)  @content
 
-// @mixin media($media) 
-//   @if $media == xs 
-//     @media (max-width: $breakpoint-sm)  @content
-  
-//   @else if $media == sm 
-//     @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md)  @content
-  
-//   @else if $media == md 
-//     @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg)  @content
-  
-//   @else if $media == lg 
-//     @media (min-width: $breakpoint-lg)  @content
+
+$width-name: min-width
+
+
+@media screen and ($width-name : $breakpoint-sm) 
+  .mapInformation
+    display: flex
+  .mapInformation__information
+    width: 450px

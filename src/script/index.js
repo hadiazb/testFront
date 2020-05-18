@@ -104,7 +104,8 @@ function renderExtraData({ location, country_code, recovered, dead, confirmed })
   </div>
   `)
 }
-const icon = 'https://raw.githubusercontent.com/LeonidasEsteban/covid-19-map/master/icon.png'
+// const icon = 'https://raw.githubusercontent.com/LeonidasEsteban/covid-19-map/master/icon.png'
+const icon = './images/point.png'
 const popup = new window.google.maps.InfoWindow()
 
 async function renderData() {

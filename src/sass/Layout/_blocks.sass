@@ -6,6 +6,7 @@
   height: 50px
   background-color: #444444
   z-index: 100
+  box-shadow: 0 0 10px #000000
   &__menuMobile
     height: 50px
     @include margin()
@@ -13,6 +14,7 @@
     &__button
       font-size: 2em
       color: $color-white
+      cursor: pointer
     &__title
       font-size: 1em
       & a 
@@ -30,48 +32,41 @@
   z-index: 1000
   box-shadow: 1px 1px 10px #000000
   background-color: #444444
+  transition: all 2s
   &__container
     height: 100%
     padding-bottom: 30px
     padding-top: 30px
     @include margin()
     &__back
-      display: flex
-      justify-content: flex-end
-      align-items: center
+      @include centerTypeFour()
       height: 40px
+      cursor: pointer
       &-return
         width: 30px
         height: 30px
-        display: flex
-        justify-content: center
-        align-items: center
+        @include centerTypeThree()
         & span 
           font-size: 1.3em
           color: #ffffff
     &__logo
       height: 90px
-      display: flex
-      justify-content: center
-      align-items: center
+      @include centerTypeThree()
       & img 
         width: 90px
         height: 90px
+        overflow: hidden
     &__logoDos
       height: 40px
-      display: flex
-      justify-content: center
-      align-items: center
+      @include centerTypeThree()
       overflow: hidden
       & img 
         width: 160px
         height: 160px
     &__information
-      height: 250px
+      height: 220px
       display: flex
-      flex-direction: column
-      justify-content: space-around
-      align-items: center
+      @include centerTypeFive()
       & button 
         width: 150px
         height: 30px
@@ -83,66 +78,63 @@
         outline: none
       & button:hover
         background-color: #db1f1f1a
+        cursor: pointer
     &__socialmedia
-      display: flex
-      justify-content: space-around
-      align-items: center
+      @include centerTypeTwo()
       height: 80px
       &-facebook
         width: 50px
         height: 50px
-        display: flex
-        justify-content: space-around
-        align-items: center
+        @include centerTypeThree()
         border-radius: 50%
         font-size: 2em
-        color: #444444
         background-color: #ffffff96
+        & a 
+          @include centerTypeThree()
+          color: #444444
+          text-decoration: none
       &-twitter
         width: 50px
         height: 50px
-        display: flex
-        justify-content: space-around
-        align-items: center
+        @include centerTypeThree()
         border-radius: 50%
         font-size: 2em
-        color: #444444
         background-color: #ffffff96
+        & a 
+          @include centerTypeThree()
+          color: #444444 
+          text-decoration: none
       &-youtube
         width: 50px
         height: 50px
-        display: flex
-        justify-content: space-around
-        align-items: center
+        @include centerTypeThree()
         border-radius: 50%
         font-size: 2em
-        color: #444444
         background-color: #ffffff96
+        & a 
+          @include centerTypeThree()
+          text-decoration: none
+          color: #444444
 
 
 
 .mapInformation
   width: 100%
   display: block
-  // @include centerTypeOne()
-  flex-wrap: wrap
   &__map
-    display: block
-    width: 100%
-    height: calc( 100vh - 50px )
+    width: 100vw
+    height: 100vh
   &__information
-    display: block
-    width: 100%
-    height: calc(100vh -50px)
+    width: 100vw
+    height: 100vh
     background-color: #444444
     &__statistics
       height: 100%
-      padding-bottom: 50px
-      padding-top: 30px
+      padding-top: 60px
       @include margin()
       color: #ffffff
       &-head
-        padding: 0 0 15px
+        padding: 0 0 10px
         @include centerTypeTwo()
         & img
           width: 60px
@@ -160,13 +152,13 @@
           display: flex
           align-items: center
           width: 60%
-          height: 50px
+          height: 40px
           font-size: 1em
           & span
             font-size: 2em
             padding-right: 10px
         & h6 
-          height: 50px
+          height: 40px
           width: 40%
           font-size: .9em
           letter-spacing: 2px
@@ -210,8 +202,11 @@
 .uno 
   background-color: rgba(255, 255 , 255 , .05)
 
-
-
+.mapInformation__information__statistics-table::-webkit-scrollbar
+  width: 7px
+  background-color: #3b3b3a
+.mapInformation__information__statistics-table::-webkit-scrollbar-thumb
+  background-color: #444444
 
 
 
