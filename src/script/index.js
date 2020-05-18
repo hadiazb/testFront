@@ -5,8 +5,8 @@ const map = new window.google.maps.Map($map, {
     lat: 37.09024,
     lng: -95.712891
   },
-  // zoom: 4.7,
-  zoom: 3,
+  zoom: 4.7,
+  // zoom: 3,
   styles: mapStyle,
 })
 
