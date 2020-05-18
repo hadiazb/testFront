@@ -15,7 +15,7 @@
   <header class="header">
 
     <section class="header__menuMobile">
-      <div class="header__menuMobile__button icon-menu"></div>
+      <div class="header__menuMobile__button icon-menu boton"></div>
       <div class="header__menuMobile__title">
           <h3>
             <a href="#">Covid-19</a>
@@ -31,7 +31,7 @@
     <div class="mobile__container">
       <div class="mobile__container__back">
         <div class="mobile__container__back-return ">
-          <span class="icon-close"></span>
+          <span class="icon-close boton"></span>
         </div>
       </div>
       <div class="mobile__container__logo">
@@ -40,15 +40,23 @@
       <div class="mobile__container__logoDos">
         <img src="./images/LogoBlanco.png" alt="">
       </div>
-      <div class="mobile__container__information"></div>
-      <div class="mobile__container__socialmedia"></div>
+      <div class="mobile__container__information">
+        <button>Contact</button>
+        <button>Information</button>
+        <button>API</button>
+        <button>Version</button>
+        <button>Terms & conditions</button>
+      </div>
+      <div class="mobile__container__socialmedia">
+        <div class="mobile__container__socialmedia-facebook"><span class="icon-facebook-with-circle"></span></div>  
+        <div class="mobile__container__socialmedia-twitter"><span class="icon-twitter-with-circle"></span></div>  
+        <div class="mobile__container__socialmedia-youtube"><span class="icon-youtube"></span></div>  
+      </div>
     </div>
   </section>
 
   <section class="mapInformation">
-    <div class="mapInformation__map" id="map">
-
-    </div>
+    <div class="mapInformation__map" id="map"></div>
 
     <div class="mapInformation__information">
       <div class="mapInformation__information__statistics">
@@ -76,17 +84,36 @@
           <label for=""><span class="icon-person"></span>Updated</label>
           <h6 id="updated"></h6>
         </div>
+      
+        <div class="mapInformation__information__statistics-table">
+          <h4>Stade Cases</h4>
+          <table class="table">
+            <thead class="table__cabeza">
+              <tr class="table__filas">
+                <th class="table__filas-number">#</th>
+                <th class="table__filas-stade">Stade</th>
+                <th class="table__filas-conf">Confirmed</th>
+              </tr>
+            </thead>
+            <tbody class="table__body" id="cuerpoTabla">
+              
+              
+            </tbody>
+          </table>
+        </div>
+
       </div> 
       
-      
-      
+
     </div>
   </section>
 
 
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD7B20X6nDgerRjuW84R3lf5TtqDO6AVg"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="module" src="script/index.js"></script>
+<script  src="script/menu.js"></script>
 
 </body>
 </html>

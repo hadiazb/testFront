@@ -39,10 +39,32 @@ traer();
 
 
 
+function sortJSON(data, key, orden) {
+  return data.sort(function (a, b) {
+      var x = a[key],
+      y = b[key];
+      if (orden === 'asc') {
+          return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+      }
+      if (orden === 'desc') {
+          return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+      }
+  });
+}
 
-
-
-
+function pintar(dataBase) {
+  var completarTabla = "";
+  let cuerpoTabla = document.getElementById("cuerpoTabla")
+  let indice = 2;
+  for (let i = 1; i < dataBase.length; i++) {
+    if (i % indice == 0) {
+      completarTabla += `<tr class="table__filas "><td class="number">${i}</td><td class="stade">${dataBase[i].location}</td><td class="conf">${dataBase[i].confirmed}</td></tr>`;
+    } else {
+      completarTabla += `<tr class="table__filas uno"><td class="number">${i}</td><td class="stade">${dataBase[i].location}</td><td class="conf">${dataBase[i].confirmed}</td></tr>`;
+    }
+  }
+  cuerpoTabla.innerHTML = completarTabla;
+}
 
 
 renderData()
@@ -50,7 +72,6 @@ async function getData() {
   const response = await fetch('https://www.trackcorona.live/api/provinces')
   const data = await response.json();
   var dataBase = [{},];
-  
   for (let i = 0; i < data.data.length; i++) {
     if (data.data[i].country_code == "us") {
       var place = { 
@@ -68,6 +89,7 @@ async function getData() {
   }
   delete dataBase[0];
   console.log(dataBase)
+  pintar(dataBase)
   return dataBase
 }
 

@@ -34,21 +34,20 @@ body {
         text-decoration: underline; }
 
 .mobile {
-  display: none;
   width: 260px;
   height: 90vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   z-index: 1000;
+  box-shadow: 1px 1px 10px #000000;
   background-color: #444444; }
   .mobile__container {
     height: 100%;
     padding-bottom: 30px;
     padding-top: 30px;
     margin-left: 20px;
-    margin-right: 20px;
-    border: 1px solid red; }
+    margin-right: 20px; }
     .mobile__container__back {
       display: flex;
       justify-content: flex-end;
@@ -81,26 +80,70 @@ body {
         width: 160px;
         height: 160px; }
     .mobile__container__information {
-      border: 1px solid green;
-      height: 150px; }
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .mobile__container__information button {
+        width: 150px;
+        height: 30px;
+        border: 1px solid #ffffff38;
+        background-color: #0000001a;
+        color: #ffffff;
+        border-radius: 7px;
+        box-shadow: 0 0 5px #000000;
+        outline: none; }
+      .mobile__container__information button:hover {
+        background-color: #db1f1f1a; }
     .mobile__container__socialmedia {
-      border: 1px solid green;
-      height: 130px; }
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px; }
+      .mobile__container__socialmedia-facebook {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 2em;
+        color: #444444;
+        background-color: #ffffff96; }
+      .mobile__container__socialmedia-twitter {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 2em;
+        color: #444444;
+        background-color: #ffffff96; }
+      .mobile__container__socialmedia-youtube {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 2em;
+        color: #444444;
+        background-color: #ffffff96; }
 
 .mapInformation {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
   flex-wrap: wrap; }
   .mapInformation__map {
     display: block;
     width: 100%;
-    height: calc( 100vh - 50px - 30px); }
+    height: calc( 100vh - 50px); }
   .mapInformation__information {
     display: block;
     width: 100%;
-    height: calc( 100vh);
+    height: calc(100vh -50px);
     background-color: #444444; }
     .mapInformation__information__statistics {
       height: 100%;
@@ -144,3 +187,40 @@ body {
           letter-spacing: 2px;
           text-align: right;
           line-height: 50px; }
+      .mapInformation__information__statistics-table {
+        padding: 0 0 10px;
+        height: 200px;
+        overflow-y: scroll; }
+        .mapInformation__information__statistics-table h4 {
+          width: 100%;
+          padding: 8px;
+          text-align: center; }
+        .mapInformation__information__statistics-table table {
+          width: 100%; }
+        .mapInformation__information__statistics-table .table__cabeza {
+          border: 1px solid transparent; }
+          .mapInformation__information__statistics-table .table__cabeza .table__filas {
+            height: 30px; }
+            .mapInformation__information__statistics-table .table__cabeza .table__filas .table__filas-number {
+              width: 8%; }
+            .mapInformation__information__statistics-table .table__cabeza .table__filas .table__filas-stade {
+              width: 60%;
+              padding-left: 5px;
+              text-align: left; }
+            .mapInformation__information__statistics-table .table__cabeza .table__filas .table__filas-conf {
+              width: 32%;
+              text-align: right; }
+        .mapInformation__information__statistics-table .table__body {
+          border: 1px solid transparent; }
+          .mapInformation__information__statistics-table .table__body .table__filas {
+            height: 30px; }
+            .mapInformation__information__statistics-table .table__body .table__filas .number {
+              text-align: center; }
+            .mapInformation__information__statistics-table .table__body .table__filas .stade {
+              padding-left: 5px; }
+            .mapInformation__information__statistics-table .table__body .table__filas .conf {
+              text-align: right;
+              letter-spacing: 2px; }
+
+.uno {
+  background-color: rgba(255, 255, 255, 0.05); }

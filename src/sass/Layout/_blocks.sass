@@ -22,20 +22,19 @@
         text-decoration: underline
 
 .mobile
-  display: none
   width: 260px
   height: 90vh
   position: fixed
   top: 0
-  left: 0
+  left: -100%
   z-index: 1000
+  box-shadow: 1px 1px 10px #000000
   background-color: #444444
   &__container
     height: 100%
     padding-bottom: 30px
     padding-top: 30px
     @include margin()
-    border: 1px solid red
     &__back
       display: flex
       justify-content: flex-end
@@ -59,34 +58,82 @@
         width: 90px
         height: 90px
     &__logoDos
-          height: 40px
-          display: flex
-          justify-content: center
-          align-items: center
-          overflow: hidden
-          & img 
-            width: 160px
-            height: 160px
+      height: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      overflow: hidden
+      & img 
+        width: 160px
+        height: 160px
     &__information
-      border: 1px solid green
-      height: 150px
+      height: 250px
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      & button 
+        width: 150px
+        height: 30px
+        border: 1px solid #ffffff38
+        background-color: #0000001a
+        color: #ffffff
+        border-radius: 7px
+        box-shadow: 0 0 5px #000000
+        outline: none
+      & button:hover
+        background-color: #db1f1f1a
     &__socialmedia
-      border: 1px solid green
-      height: 130px
+      display: flex
+      justify-content: space-around
+      align-items: center
+      height: 80px
+      &-facebook
+        width: 50px
+        height: 50px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-radius: 50%
+        font-size: 2em
+        color: #444444
+        background-color: #ffffff96
+      &-twitter
+        width: 50px
+        height: 50px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-radius: 50%
+        font-size: 2em
+        color: #444444
+        background-color: #ffffff96
+      &-youtube
+        width: 50px
+        height: 50px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-radius: 50%
+        font-size: 2em
+        color: #444444
+        background-color: #ffffff96
+
 
 
 .mapInformation
   width: 100%
-  @include centerTypeOne()
+  display: block
+  // @include centerTypeOne()
   flex-wrap: wrap
   &__map
     display: block
     width: 100%
-    height: calc( 100vh - 50px - 30px )
+    height: calc( 100vh - 50px )
   &__information
     display: block
     width: 100%
-    height: calc( 100vh)
+    height: calc(100vh -50px)
     background-color: #444444
     &__statistics
       height: 100%
@@ -125,6 +172,52 @@
           letter-spacing: 2px
           text-align: right
           line-height: 50px
+      &-table
+        padding: 0 0 10px
+        height: 200px
+        overflow-y: scroll
+        & h4 
+          width: 100%
+          padding: 8px
+          text-align: center
+        & table
+          width: 100%
+        & .table__cabeza
+          border: 1px solid transparent 
+          & .table__filas 
+            height: 30px
+            & .table__filas-number 
+              width: 8%
+            &  .table__filas-stade
+              width: 60%
+              padding-left: 5px
+              text-align: left
+            &  .table__filas-conf
+              width: 32%
+              text-align: right
+        & .table__body
+          border: 1px solid transparent 
+          & .table__filas 
+            height: 30px  
+            & .number
+              text-align: center
+            & .stade
+              padding-left: 5px
+            & .conf
+              text-align: right
+              letter-spacing: 2px
+
+.uno 
+  background-color: rgba(255, 255 , 255 , .05)
+
+
+
+
+
+
+
+
+
 
 
 
