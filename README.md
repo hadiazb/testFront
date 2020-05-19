@@ -36,6 +36,8 @@ En este proyecto se emplearon las siguientes metodologías con el objetivo de ha
 
 - Asignación de variables empleado camelCase, específicamente en JavaScript
 
+- Empleo de Flexbox en el box-model y @media, para hacer un webside resposivo que se responda a las pantallas comerciales.
+
 ## API
 Las API y recursos se encuentran en los siguientes links
 
