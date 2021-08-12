@@ -104,7 +104,7 @@
     "p-try": "^2.2.0",
     "os-tmpdir": "^1.0.2",
     "path-exists": "^2.1.0",
-    "path-parse": "^1.0.6",
+    "path-parse": "^1.0.7",
     "pinkie": "^2.0.4",
     "path-type": "^1.1.0",
     "performance-now": "^2.1.0",
