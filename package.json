@@ -111,7 +111,7 @@
     "pify": "^2.3.0",
     "pseudomap": "^1.0.2",
     "pinkie-promise": "^2.0.1",
-    "qs": "^6.5.2",
+    "qs": "^6.5.3",
     "read-pkg-up": "^1.0.1",
     "punycode": "^2.1.1",
     "read-pkg": "^1.1.0",
